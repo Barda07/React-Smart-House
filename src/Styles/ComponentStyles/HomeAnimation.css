@@ -1,0 +1,32 @@
+.HomeAnimation_dots {
+    opacity: 0;
+    animation: dotAnimation 1.5s infinite;
+    display: inline;
+}
+
+@keyframes dotAnimation {
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    33.3% {
+        opacity: 1;
+    }
+
+    66.6% {
+        opacity: 0;
+    }
+}
+
+.HomeAnimation_dots:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.HomeAnimation_dots:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.HomeAnimation_dots:nth-child(3) {
+    animation-delay: 1s;
+}

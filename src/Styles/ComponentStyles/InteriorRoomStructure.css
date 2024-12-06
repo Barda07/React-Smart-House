@@ -1,0 +1,259 @@
+#IRS_container {
+    background-image: url("../../../public/assets/AdobeStock_289941138.webp");
+    background-size: cover;
+}
+
+#IRS_backButton {
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0.666);
+    color: white;
+    left: 0.7%;
+    top: 3.2%
+}
+
+#IRS_subContainer {
+    position: relative;
+    background-color: rgba(220, 220, 220, 0.293);
+    width: 85%;
+    height: 85%;
+    left: 7.2%;
+    top: 7.4%;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+/*LEFT CONTAINER*/
+#IRS_roomDetailsDiv {
+    position: relative;
+    height: 95%;
+    width: 30%;
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: pre-wrap;
+    flex-direction: column;
+    border: 1px solid black;
+
+}
+
+#IRS_roomName {
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 7px;
+    color: rgb(255, 233, 196);
+    left: 3%;
+    top: 40px;
+    word-wrap: break-word;
+    word-break: break-all;
+
+
+}
+
+#IRS_roomType {
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 7px;
+    color: rgb(255, 233, 196);
+    left: 3%;
+    top: 263px
+}
+
+
+
+/*MIDDLE COTAINER*/
+#IRS_roomEditDiv {
+    position: relative;
+    height: 95%;
+    width: 30%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+}
+
+#IRS_roomNameEditDiv {
+    width: 100%;
+    height: 14%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#IRS_roomNameInput {
+    width: 50%;
+    height: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    opacity: 85%;
+
+}
+
+#IRS_roomNameSubmitButton {
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    opacity: 85%;
+    border: 1px solid black
+}
+
+
+#IRS_roomDeleteButton {
+    width: 135px;
+    height: 135px;
+    border-radius: 40%;
+    opacity: 85%;
+    background-color: rgb(219, 31, 31);
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border: 2px solid black
+}
+
+#IRS_roomDeleteButton:active {
+    transform: scale(1, 1);
+}
+
+
+#IRS_roomDeviceAddingDiv {
+    width: 100%;
+    height: 14%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#IRS_roomDeviceSelect {
+    width: 55%;
+    height: 43px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    opacity: 85%;
+}
+
+#IRS_roomDeviceAddButton {
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    opacity: 85%;
+    border: 1px solid black;
+}
+
+
+/*RIGHT CONTAINER*/
+#IRS_roomDevicesDiv {
+    height: 95%;
+    width: 30%;
+    border-radius: 40px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/**
+for small screens
+*/
+@media (max-width: 780px) {
+
+    /*LEFT CONTAINER*/
+    #IRS_roomDetailsDiv {
+        display: none;
+    }
+
+
+    /*MIDDLE COTAINER*/
+    #IRS_roomEditDiv {
+        position: relative;
+        height: 95%;
+        width: 47.5%;
+    }
+
+    #IRS_roomNameSubmitButton {
+        width: 50%;
+        height: 35px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        overflow: hidden;
+
+    }
+
+    #IRS_roomDeleteButton {
+        width: 110px;
+        height: 110px;
+        font-size: 15px;
+        letter-spacing: 1px;
+
+    }
+
+    #IRS_roomDeviceAddButton {
+        width: 50%;
+        height: 35px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        overflow: hidden;
+    }
+
+    /*RIGHT CONTAINER*/
+    #IRS_roomDevicesDiv {
+        height: 95%;
+        width: 47.5%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+}
+
+
+/**
+for extremely small screens
+*/
+@media screen and (max-width: 470px) {
+    #IRS_roomDevicesDiv {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    @media (max-width: 350px) {
+        #IRS_roomDeleteButton {
+            width: 75px;
+            height: 75px;
+            font-size: 11px;
+            letter-spacing: 1px;
+
+
+        }
+    }
+}

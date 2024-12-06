@@ -1,0 +1,159 @@
+#Main_container {
+    background-image: url("../../../public/assets/AdobeStock_289941138.webp");
+    background-size: cover;
+
+}
+
+#Main_backButton {
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.666);
+    color: white;
+    left: 0.2%;
+    top: 1%
+}
+
+
+#Main_subContainer {
+    position: relative;
+    background-color: rgba(220, 220, 220, 0.250);
+    width: 84.8%;
+    height: 84.8%;
+    left: 7.2%;
+    top: 7.4%;
+    border-radius: 60px;
+    flex-direction: row;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+
+}
+
+#Main_introDiv {
+    position: absolute;
+    width: 90%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(112, 112, 112, 0.33);
+    border-radius: 20px;
+    padding: 10px;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+#Main_introText {
+    color: rgb(255, 220, 160);
+    letter-spacing: 2px;
+    height: 12px;
+    max-width: 80%;
+    font-family: monospace;
+    margin: 0;
+
+}
+
+#Main_introButton {
+    width: 100px;
+    height: 37px;
+    border-radius: 15px;
+    font-size: 14px;
+    border: none;
+
+
+
+}
+
+#Main_createButton {
+    position: fixed;
+    width: 160px;
+    height: 160px;
+    border-radius: 40%;
+    opacity: 85%;
+    border-width: 0px;
+    background-color: rgb(255, 250, 244);
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-width: none;
+    margin-top: 235px;
+    cursor: pointer;
+
+}
+
+#Main_createButton:hover {
+    transform: scale(1.08, 1.08);
+}
+
+#Main_createButton:active {
+    transform: scale(1, 1);
+}
+
+#Main_roomsDiv {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 29%;
+    top: 66%;
+    border-radius: 20px;
+}
+
+
+/**
+for small screens
+*/
+@media (max-width: 780px) {
+
+    #Main_createButton {
+        position: fixed;
+        width: 140px;
+        height: 140px;
+        border-radius: 40%;
+        opacity: 85%;
+        border-width: 0px;
+        background-color: rgb(255, 250, 244);
+        font-size: 21px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        border-width: none;
+        margin-top: 200px;
+        cursor: pointer;
+
+    }
+
+    #Main_roomsDiv {
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        height: 29%;
+        top: 66%;
+        border-radius: 20px;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: auto;
+        white-space: nowrap;
+
+    }
+
+    @media (max-width: 420px) {
+        #Main_introText {
+            font-size: 13px;
+        }
+    }
+
+
+
+}

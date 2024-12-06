@@ -1,0 +1,80 @@
+#Home_container {
+    background-image: url("../../../public/assets/pexels-steve-johnson-1548111.jpg");
+    background-size: cover;
+}
+
+#Home_pageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#Home_instructionDiv {
+    position: absolute;
+    top: 27%;
+    width: 24%;
+    /* Keep width as needed */
+    background-color: rgba(220, 220, 220, 0.293);
+    border-radius: 3px;
+    text-overflow: unset;
+    white-space: normal;
+    height: auto;
+    padding: 3px;
+    box-sizing: border-box;
+
+}
+
+.Home_instructionText {
+    font-size: 21px;
+    color: rgb(255, 241, 224);
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: auto;
+    display: inline;
+
+}
+
+#Home_signInDiv {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 35%;
+    width: 22%
+}
+
+.Home_input {
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    padding: 8px;
+    margin-top: 22px;
+    font-size: 17px;
+    opacity: 82%;
+    letter-spacing: 3px;
+}
+
+.Home_input:hover {
+    transform: scale(1.04, 1.04);
+}
+
+#Home_button {
+    margin-top: 30px;
+    width: 130px;
+    height: 50px;
+    border-radius: 20px;
+    opacity: 82%;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+#Home_button:active {
+    transform: scale(1.05, 1.05);
+}

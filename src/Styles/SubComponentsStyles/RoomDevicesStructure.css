@@ -1,0 +1,80 @@
+#RDS_container {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 14px;
+    padding: 10px;
+    background-color: rgba(196, 196, 196, 0.662);
+    ;
+    letter-spacing: 2px;
+
+
+}
+
+#RDS_deviceNameDiv {
+    width: 100px;
+
+}
+
+
+.RDS_deviceButtons {
+    border-radius: 50px;
+    width: 85px;
+    height: 40px;
+    font-size: 16px;
+    opacity: 85%;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+
+}
+
+.RDS_deviceButtons:active {
+    transform: scale(0.92, 0.92);
+}
+
+
+
+@media screen and (max-width: 470px) {
+    #RDS_container {
+        width: 90%;
+        height: 130px;
+        border: 1px solid black;
+        border-radius: 25px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #RDS_deviceNameDiv {
+        width: 50px;
+
+    }
+
+    .RDS_deviceButtons {
+        border-radius: 3px;
+        width: 85px;
+        font-size: 14px;
+        opacity: 85%;
+        letter-spacing: 1px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-bottom: 5px;
+
+    }
+
+    .RDS_deviceButtons:active {
+        transform: scale(0.92, 0.92);
+    }
+
+}

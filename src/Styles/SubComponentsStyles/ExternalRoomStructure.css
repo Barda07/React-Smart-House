@@ -1,0 +1,32 @@
+#ExternalRoomStructure_container {
+    width: 135px;
+    height: 135px;
+    border: 1px solid black;
+    position: relative;
+    opacity: 80%;
+    border-radius: 20%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#ExternalRoomStructure_container:hover {
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+}
+
+#ExternalRoomStructure_container:active {
+    transform: scale(1, 1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+    #ExternalRoomStructure_container {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+    }
+}
