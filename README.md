@@ -1,2 +1,3 @@
 # React-Smart-House
-This frontend-only React project showcases mastery of essential concepts like state management, props, and data transfer between components. Features include advanced loop structures, secure URL handling with misuse prevention, and responsive design optimized for smartphones and PC screens.
+Inside the web page you will find instructions, and clear design, on how to properly use it's functions.
+The web page is also responsive to fit desktop computers, and smartphones.
